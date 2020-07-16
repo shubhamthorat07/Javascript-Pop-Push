@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+	<title> Pop Push Shift Unshift </title>
+
+</head>
+
+
+
+<body>
+
+    <p id="demo0"> </p>
+	<p id="demo1"> </p>
+	<p id="demo2"> </p>
+	<p id="demo3"> </p>
+	<p id="demo4"> </p>
+
+	<script type="text/javascript">
+		
+		var fruits = ["Apple", "Banana", "Mango"];
+
+		document.getElementById("demo0").innerHTML = fruits.join(",");
+
+
+		fruits.pop();
+		document.getElementById("demo1").innerHTML = fruits.join(",");
+
+
+		fruits.push("Cherry","Orange");
+		document.getElementById("demo2").innerHTML = fruits.join(",");
+
+
+		fruits.shift("Orange");
+		document.getElementById("demo3").innerHTML = fruits.join(",");
+
+
+		fruits.unshift("Cherry");
+		document.getElementById("demo4").innerHTML = fruits.join(",");
+
+	</script>
+	
+
+
+</body>
+
+</html>
